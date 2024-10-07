@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:newbie/pages/home.dart';
+import 'package:newbie/pages/test.dart';
+import 'package:newbie/utils/app_res.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: AppRes.appThemeData,
+      home: Test(),
     );
   }
 }
